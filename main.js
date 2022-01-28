@@ -1,7 +1,8 @@
 function clickbutton (target) {
     let result = document.getElementById("result");
     let target_value = target.innerHTML;
-    
+    // let operator = ["+","-","*","/"];
+    // console.log(operator.includes("target_value"));
     if (target_value == "AC") {
         result.innerHTML = "0"
     } else if (target_value == "=") {
@@ -11,12 +12,59 @@ function clickbutton (target) {
             result.innerHTML = target_value
         } else if (target_value == "+" && result.innerHTML.slice(-1) == "+"){
             return;
+        } else if (target_value == "+" && result.innerHTML.slice(-1) == "-"){
+            return;
+        } else if (target_value == "+" && result.innerHTML.slice(-1) == "*"){
+            return;
+        } else if (target_value == "+" && result.innerHTML.slice(-1) == "/"){
+            return;
+        } else if (target_value == "+" && result.innerHTML.slice(-1) == "."){
+            return;
+            
+        } else if (target_value == "-" && result.innerHTML.slice(-1) == "+"){
+            return;
         } else if (target_value == "-" && result.innerHTML.slice(-1) == "-"){
+            return;
+        } else if (target_value == "-" && result.innerHTML.slice(-1) == "*"){
+            return;
+        } else if (target_value == "-" && result.innerHTML.slice(-1) == "/"){
+            return;
+        } else if (target_value == "-" && result.innerHTML.slice(-1) == "."){
+            return;
+        
+        } else if (target_value == "*" && result.innerHTML.slice(-1) == "+"){
+            return;
+        } else if (target_value == "*" && result.innerHTML.slice(-1) == "-"){
             return;
         } else if (target_value == "*" && result.innerHTML.slice(-1) == "*"){
             return;
+        } else if (target_value == "*" && result.innerHTML.slice(-1) == "/"){
+            return;
+        } else if (target_value == "*" && result.innerHTML.slice(-1) == "."){
+            return;
+            
+        } else if (target_value == "/" && result.innerHTML.slice(-1) == "+"){
+            return;
+        } else if (target_value == "/" && result.innerHTML.slice(-1) == "-"){
+            return;
+        } else if (target_value == "/" && result.innerHTML.slice(-1) == "*"){
+            return;
         } else if (target_value == "/" && result.innerHTML.slice(-1) == "/"){
             return;
+        } else if (target_value == "/" && result.innerHTML.slice(-1) == "."){
+            return;
+            
+        } else if (target_value == "." && result.innerHTML.slice(-1) == "+"){
+            return;
+        } else if (target_value == "." && result.innerHTML.slice(-1) == "-"){
+            return;
+        } else if (target_value == "." && result.innerHTML.slice(-1) == "*"){
+            return;
+        } else if (target_value == "." && result.innerHTML.slice(-1) == "/"){
+            return;
+        } else if (target_value == "." && result.innerHTML.slice(-1) == "."){
+            return;    
+            
         } else {
             result.innerHTML += target_value
         }
